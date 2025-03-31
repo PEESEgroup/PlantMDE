@@ -6,5 +6,13 @@ Tthe first benchmark dataset designed for **plant depth estimation** and **3D re
 
 ---
 
-## 📂 Dataset Structure
-PlantDepth/ ├── Crops3D/ ├── ETH_BeetRoot/ ├── GScatter/ ├── PLANest/ ├── Plant3D/ ├── PlantStereo/ ├── Soybeanmvs/ └── WUR_DwarfTomato/
+### 📂 Dataset Structure
+PlantDepth/
+├── Crops3D/
+├── ETH_BeetRoot/
+├── GScatter/
+├── PLANest/
+├── Plant3D/
+├── PlantStereo/
+├── Soybeanmvs/
+└── WUR_DwarfTomato/
