@@ -41,6 +41,7 @@ for i, sample in enumerate(trainloader):
     # Load RGB, Depth in disparity space, mask for background, and organ segmentation
     img, disparity, valid_mask, segmentation = sample['image'], sample['disparity'], sample['mask'], sample['segmentation']
     ...
+    ...
 ```
 
 ## 📢 Citation
