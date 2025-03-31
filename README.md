@@ -7,8 +7,14 @@ Tthe first benchmark dataset designed for **plant depth estimation** and **3D re
 ---
 
 ### 📂 Dataset Structure
+```
 PlantDepth/
-├── Crops3D/
+├── Crops3D/ # Sub-dataset
+    ├── depth/                # Depth maps 
+    ├── rgb/                  # RGB images 
+    ├── segmentation/         # Segmentation labels 
+    ├── test_file_list.txt    # List of test files used for evaluation
+    ├── train_file_list.txt   # List of train files used for model training
 ├── ETH_BeetRoot/
 ├── GScatter/
 ├── PLANest/
@@ -16,3 +22,4 @@ PlantDepth/
 ├── PlantStereo/
 ├── Soybeanmvs/
 └── WUR_DwarfTomato/
+```
