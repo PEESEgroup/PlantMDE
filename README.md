@@ -36,6 +36,11 @@ from dataset.plantdepth import PLANTDEPTH_MIXED
 mix_set = ['GScatter','Crops3D','PLANest','Soybeanmvs','Plant3D'] # The sub-datasets you want load
 root_dir = '.../PlantDepth' # The path for PlantDepth
 trainset = PLANTDEPTH_MIXED(root_dir, [f'/{d}/train_file_list.txt' for d in mix_set], 'train', size=(518,518))
+trainloader = DataLoader(trainset)
+for i, sample in enumerate(trainloader):
+    # Load RGB, Depth in disparity space, mask for background, and organ segmentation
+    img, disparity, valid_mask, segmentation = sample['image'], sample['disparity'], sample['mask'], sample['segmentation']
+    ...
 ```
 
 ## 📢 Citation
