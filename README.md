@@ -17,6 +17,7 @@ PlantDepth/
     ├── train_file_list.txt   # List of train files used for model training
 ├── ETH_BeetRoot/
     ├── ...
+    ├── mask/ # Binary masks for the RGB-D datasets with backgrounds
 ├── GScatter/
 ├── PLANest/
 ├── Plant3D/
