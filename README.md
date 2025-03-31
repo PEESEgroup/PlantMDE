@@ -29,8 +29,14 @@ PlantDepth/
 └── WUR_DwarfTomato/
 ```
 ### 🔗 Usage
-We provide pytorch dataloader in `dataset/plantdepth.py`, for loading the PlantDepth.
-
+We provide pytorch dataloader in `dataset/plantdepth.py`.
+The dataset can be loaded by:
+```
+from dataset.plantdepth import PLANTDEPTH_MIXED
+mix_set = ['GScatter','Crops3D','PLANest','Soybeanmvs','Plant3D'] # The sub-datasets you want load
+root_dir = '.../PlantDepth' # The path for PlantDepth
+trainset = PLANTDEPTH_MIXED(root_dir, [f'/{d}/train_file_list.txt' for d in mix_set], 'train', size=(518,518))
+```
 
 ## 📢 Citation
 > Please cite the paper when using PlantMDE or PlantDepth in your work.
