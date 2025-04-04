@@ -1,8 +1,6 @@
 # PlantMDE
 The repo for ``3D Plant Phenotyping from a Single Image: Generalizable Plant Monocular Depth Estimation via Dataset Mixing''.
 
-*We first release the PlantDepth benchmark dataset. The code for PlantMDE (Monocular Depth Estimation) is coming soon.*
-
 ---
 
 ## 🌱 PlantDepth Benchmark Dataset 
@@ -43,6 +41,7 @@ for i, sample in enumerate(trainloader):
     ...
     ...
 ```
+## PlantMDE model
 
 ## 📢 Citation
 > Please cite the paper when using PlantMDE or PlantDepth in your work.
