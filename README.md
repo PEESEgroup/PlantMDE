@@ -1,7 +1,8 @@
 # PlantMDE
 The repo for ``3D Plant Phenotyping from a Single Image: Generalizable Plant Monocular Depth Estimation via Dataset Mixing''.
-![Graphical_Abstract](assets/Graphical_Abstract.png)
 ---
+
+![Graphical_Abstract](asserts/Graphical_Abstract.png)
 
 ## 🌱 PlantDepth Benchmark Dataset 
 The first benchmark dataset designed for **plant depth estimation** and **3D reconstruction tasks**. It renders RGB-D plant images from the mainstream publicly available plant 3D datasets. The dataset can be downloaded by the [link](https://drive.google.com/file/d/1XbDwjUn16dVl7F6uGNvpgtFU-uLm1jeb/view?usp=drive_link).
@@ -41,8 +42,9 @@ for i, sample in enumerate(trainloader):
     ...
     ...
 ```
-## PlantMDE model
+## 🤖PlantMDE model
 Trained PlantMDE checkpoint can be downloaded in the [link](https://drive.google.com/file/d/1DL8ER3Tl2bZzm0CNcrFrrOoiIn_tTnuh/view?usp=drive_link).
+
 As a comparion, Depth Anything v2 checkpoint can be downloaded in the [repo](https://github.com/DepthAnything/Depth-Anything-V2) with [link](https://huggingface.co/depth-anything/Depth-Anything-V2-Small/resolve/main/depth_anything_v2_vits.pth?download=true).
 
 `MDE_organ_wise.ipynb` provides a tuition for depth estiamtion on spinach image. The Pearson correlation coefficient to the GT depth at each organ is computed. The notebook compares PlantMDE vs. Depth Anything. 
